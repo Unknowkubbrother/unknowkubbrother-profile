@@ -4,18 +4,18 @@ import Logo_Cis_Kmutnb from "../../assets/logo_cis_kmutnb.png";
 
 function position() {
   return (
-    <div className="w-[70%] m-auto flex py-10">
+    <div className="w-[95%] 2xl:w-[70%] m-auto flex py-10">
       <div className="w-full flex justify-center items-center flex-col">
-        <div className="w-full flex p-5">
-          <div className="w-[50%] h-full bg-[#262626] rounded-md m-5" data-aos="fade-right">
-            <div className="w-[70%] h-[30%] flex justify-start items-center m-auto mt-5">
+        <div className="w-full flex flex-col 2xl:flex-row p-5 gap-5">
+          <div className="w-[95%] m-auto 2xl:w-[50%] h-full bg-[#262626] rounded-md 2xl:m-5" data-aos="fade-right">
+            <div className="w-[90%] 2xl:w-[70%] h-[30%] flex justify-start items-center m-auto mt-5">
               <img
                 src={Logo_Codekub}
                 alt=""
                 className="w-[70px] h-[70px] bg-[#3d7fa1] rounded-full"
               />
               <div className="flex flex-col ml-5">
-                <span className="text-3xl text-[#3d7fa1] font-bold">
+                <span className="text-2xl mt-10 2xl:mt-0 2xl:text-3xl text-[#3d7fa1] font-bold">
                   Codekub
                 </span>
                 <span className="text-xl text-white">
@@ -50,15 +50,15 @@ function position() {
               </ul>
             </div>
           </div>
-          <div className="w-[50%] h-full bg-[#262626] rounded-md m-5" data-aos="fade-left">
-            <div className="w-[70%] h-[30%] flex justify-start items-center m-auto mt-5">
+          <div className="w-[95%] m-auto 2xl:w-[50%] h-full bg-[#262626] rounded-md 2xl:m-5" data-aos="fade-left">
+            <div className="w-[90%] 2xl:w-[70%] h-[30%] flex justify-start items-center m-auto mt-5">
               <img
                 src={Logo_Cis_Kmutnb}
                 alt=""
                 className="w-[70px] h-[70px] bg-white rounded-full p-2"
               />
               <div className="flex flex-col ml-5">
-                <span className="text-3xl text-[#3d7fa1] font-bold">
+                <span className="text-2xl mt-10 2xl:mt-0 2xl:text-3xl text-[#3d7fa1] font-bold">
                   CIS-KMUTNB
                 </span>
                 <span className="text-xl text-white">

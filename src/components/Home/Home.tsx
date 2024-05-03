@@ -33,14 +33,14 @@ function Home() {
       <section id="welcome" className="w-full h-screen">
         <div className="flex items-center justify-center h-full">
           <div
-            className="w-[45%] h-[450px] flex shadow-2xl shadow-black rounded-lg overflow-hidden mt-[-7rem]"
+            className="w-[90%] 2xl:w-[45%] h-[550px] 2xl:h-[450px] flex flex-col 2xl:flex-row shadow-2xl shadow-black rounded-lg overflow-hidden mt-[-7rem]"
             data-aos="flip-left"
             data-aos-duration="1000"
           >
-            <div className="w-[40%] h-full">
+            <div className="w-full 2xl:w-[40%] h-[50%] 2xl:h-full">
               <div className="img-profile"></div>
             </div>
-            <div className="w-[60%] h-full bg-[#262626] flex justify-center items-center">
+            <div className="w-full 2xl:w-[60%] h-[50%] 2xl:h-full bg-[#262626] flex justify-center items-center">
               <div className="flex justify-center items-start flex-col text-start ml-[-3rem]">
                 <span
                   className="text-5xl p-2 bg-[#ffffff] font-semibold text-black px-5 font-mono rounded-md"
@@ -83,7 +83,7 @@ function Home() {
           </a>
         </div>
       </section>
-      <section id="about-me" className="w-full bg-[#181818]">
+      <section id="about-me" className="w-full bg-[#181818] 2xl:scroll-mt-[7rem]">
         <AboutMe
           profile={
             profile as { description: { th: JSX.Element; en: JSX.Element } }
@@ -91,7 +91,7 @@ function Home() {
         />
       </section>
       <div className="w-full flex justify-center items-center mt-[7rem]">
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-4xl 2xl:text-5xl font-bold">
           <span className="text-sky-700">Positions</span> &{" "}
           <span className="text-sky-500">Works</span>
         </h1>

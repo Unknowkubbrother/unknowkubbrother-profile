@@ -1,18 +1,18 @@
-// import React from 'react'
+import { Link } from 'react-router-dom'
 import ukb_shop from "../../assets/ukb-shop.png";
 import goit from "../../assets/goit.jpg";
 
 function Work() {
   return (
-    <div className="w-[60%] h-[600px] m-auto mt-10 border-dashed border-2 border-[#3d7fa1] rounded-lg">
-      <div className="w-full mt-[-1rem] ml-5 relative">
-        <span className="absolute text-5xl top-[-5px]">📌</span>
-        <span className="px-5 bg-sky-700 text-2xl rounded-2xl pl-[4rem]">
+    <div className="w-[95%] 2xl:w-[60%] p-5 m-auto my-[10rem] border-dashed border-2 border-[#3d7fa1] rounded-lg">
+      <div className="w-full mt-[-2.5rem] ml-5 relative">
+        <span className="absolute text-4xl 2xl:text-5xl top-[-5px]">📌</span>
+        <span className="px-5 bg-sky-700 text-lg 2xl:text-2xl rounded-2xl pl-[3rem] 2xl:pl-[4rem]">
           Here's the work I'd like to present.
         </span>
       </div>
-      <div className="w-[90%] h-[400px] m-auto mt-10 flex justify-center items-center gap-20">
-        <a href="https://shop.unknowkubbrother.net/home" className="w-[40%] md:w-[450px] p-6 rounded-2xl border border-transparent transition duration-1000 hover:scale-[1.015] hover:border-gray-200 hover:shadow-xl cursor-pointer" target="_blank">
+      <div className="w-[90%] 2xl:h-[400px] m-auto mt-10 flex flex-col 2xl:flex-row justify-center items-center 2xl:gap-20">
+        <a href="https://shop.unknowkubbrother.net/home" className="w-[95%] 2xl:w-[40%] p-6 rounded-2xl border border-transparent transition duration-1000 hover:scale-[1.015] hover:border-gray-200 hover:shadow-xl cursor-pointer m-auto" target="_blank">
           <div className="relative mb-8">
             <div className="absolute top-3 left-3 w-full h-full rounded-xl bg-gray-200"></div>
             <img
@@ -29,7 +29,7 @@ function Work() {
           </div>
         </a>
 
-        <a href="https://github.com/Unknowkubbrother/goit-project" className="w-[40%] md:w-[450px] p-6 rounded-2xl border border-transparent transition duration-1000 hover:scale-[1.015] hover:border-gray-200 hover:shadow-xl cursor-pointer" target="_blank">
+        <a href="https://github.com/Unknowkubbrother/goit-project" className="w-[95%] 2xl:w-[40%] p-6 rounded-2xl border border-transparent transition duration-1000 hover:scale-[1.015] hover:border-gray-200 hover:shadow-xl cursor-pointer m-auto" target="_blank">
           <div className="relative mb-8">
             <div className="absolute top-3 left-3 w-full h-full rounded-xl bg-gray-200"></div>
             <img
@@ -48,9 +48,9 @@ function Work() {
         
       </div>
       <div className="w-full h-[100px] flex justify-center items-center">
-        <button className="w-fit px-8 md:px-10 py-2 md:py-2.5 bg-gray-100 text-gray-500 rounded-full border-2 border-transparent transition duration-500 hover:border-gray-200 hover:scale-[0.975]">
+        <Link to="/works" className="w-fit px-8 md:px-10 py-2 md:py-2.5 bg-gray-100 text-gray-500 rounded-full border-2 border-transparent transition duration-500 hover:border-gray-200 hover:scale-[0.975]">
           ดูผลงานทั้งหมด
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
 import Home from './components/Home/Home.tsx';
 import Blog from './components/Blog/Blog.tsx';
+import Works from './components/Works/Works.tsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog />,
+      },
+      {
+        path: 'works',
+        element: <Works />,
       },
     ],
   },
