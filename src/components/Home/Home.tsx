@@ -1,4 +1,7 @@
-// import {useEffect} from 'react'
+import AboutMe from "./aboutme";
+import Position from "./position";
+import Work from "./Work";
+
 import "./Home.css";
 
 function Home() {
@@ -8,11 +11,27 @@ function Home() {
       instagram: "https://www.instagram.com/n_nnat_48/",
       github: "https://github.com/Unknowkubbrother",
     },
+    description: {
+      th: (
+        <h1>
+          ผมชื่อ <span className="text-sky-500">ณัฐ </span>อายุ 19
+          ตอนนี้ศึกษาอยู่ <a href="https://www.kmutnb.ac.th/" className="text-sky-500">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ </a>อยู่ในคณะ
+          วิทยาศาสตร์ประยุกตร์ สาขาวิทยาการคอมพิวเตอร์ มีความสนใจในการเขียนโค้ดมากๆ เป้าหมายในอนาคตคือการเป็น Fullstack Developer
+        </h1>
+      ),
+      en: (
+        <h1>
+          My name is <span className="text-sky-500">Nat</span> I'm 19 years old.
+          Currently studying at <a href="https://www.kmutnb.ac.th/" className="text-sky-500">King Mongkut's University of Technology North Bangkok </a>Being in the faculty
+          applied science Computer Science major Very interested in coding. My future goal is to become a Fullstack Developer.
+        </h1>
+      ),
+    },
   };
   return (
-    <div className="w-full h-full">
-      <section className="w-full h-screen welcome">
-        <div className="flex flex-col items-center justify-center h-full">
+    <div className="w-full h-full mb-10">
+      <section id="welcome" className="w-full h-screen">
+        <div className="flex items-center justify-center h-full">
           <div
             className="w-[45%] h-[450px] flex shadow-2xl shadow-black rounded-lg overflow-hidden mt-[-7rem]"
             data-aos="flip-left"
@@ -24,7 +43,7 @@ function Home() {
             <div className="w-[60%] h-full bg-[#262626] flex justify-center items-center">
               <div className="flex justify-center items-start flex-col text-start ml-[-3rem]">
                 <span
-                  className="text-5xl p-2 bg-[#ffffff] font-semibold text-black px-5 font-mono"
+                  className="text-5xl p-2 bg-[#ffffff] font-semibold text-black px-5 font-mono rounded-md"
                   data-aos="fade-down"
                   data-aos-duration="2000"
                 >
@@ -37,21 +56,52 @@ function Home() {
                   </span>
                 </div>
                 <div className="flex gap-4 mt-2">
-                  <a href={profile.social.instagram} target="_blank" className="text-lg">
-                    <i className="fa-brands fa-instagram text-rose-400 mr-1"></i>{" "}
+                  <a
+                    href={profile.social.instagram}
+                    target="_blank"
+                    className="text-lg hover:text-sky-700 duration-300"
+                  >
+                    <i className="fa-brands fa-instagram text-rose-400 mr-1"></i>
                     INSTAGRAM
                   </a>
-                  <a href={profile.social.github} target="_blank" className="text-lg">
-                    <i className="fa-solid fa-code mr-2 text-green-400"></i>
-                    Coding
+                  <a
+                    href={profile.social.github}
+                    target="_blank"
+                    className="text-lg hover:text-sky-700 duration-300"
+                  >
+                    <i className="fa-brands fa-github mr-2"></i>
+                    Github
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="w-full flex justify-center items-center mt-[-10rem]">
+          <a href="#about-me" className="animate-bounce">
+            <i className="fa-solid fa-angle-down text-2xl"></i>
+          </a>
+        </div>
       </section>
-      <section className="w-full h-[100vh]"></section>
+      <section id="about-me" className="w-full bg-[#181818]">
+        <AboutMe
+          profile={
+            profile as { description: { th: JSX.Element; en: JSX.Element } }
+          }
+        />
+      </section>
+      <div className="w-full flex justify-center items-center mt-[7rem]">
+        <h1 className="text-5xl font-bold">
+          <span className="text-sky-700">Positions</span> &{" "}
+          <span className="text-sky-500">Works</span>
+        </h1>
+      </div>
+      <section id="position">
+        <Position />
+      </section>
+      <section id='work'>
+          <Work/>
+      </section>
     </div>
   );
 }
