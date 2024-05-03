@@ -6,7 +6,13 @@ nav{
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #262626;
+    background-color: #181818;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
