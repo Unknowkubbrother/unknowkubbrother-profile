@@ -33,14 +33,14 @@ function Home() {
       <section id="welcome" className="w-full h-screen">
         <div className="flex items-center justify-center h-full">
           <div
-            className="w-[90%] 2xl:w-[45%] h-[550px] 2xl:h-[450px] flex flex-col 2xl:flex-row shadow-2xl shadow-black rounded-lg overflow-hidden mt-[-7rem]"
+            className="w-[90%] md:w-[90%] 2xl:w-[45%] h-[550px] md:h-[500px] lg:w-[70%] 2xl:h-[450px] flex flex-col md:flex-row 2xl:flex-row shadow-2xl shadow-black rounded-lg overflow-hidden mt-[-7rem] md:mt-[-5rem] 2xl:mt-[-7rem]"
             data-aos="flip-left"
             data-aos-duration="1000"
           >
-            <div className="w-full 2xl:w-[40%] h-[50%] 2xl:h-full">
+            <div className="w-full md:w-[40%] h-[50%] md:h-full">
               <div className="img-profile"></div>
             </div>
-            <div className="w-full 2xl:w-[60%] h-[50%] 2xl:h-full bg-[#262626] flex justify-center items-center">
+            <div className="w-full md:w-[60%] h-[50%] md:h-full bg-[#262626] flex justify-center items-center">
               <div className="flex justify-center items-start flex-col text-start ml-[-3rem]">
                 <span
                   className="text-5xl p-2 bg-[#ffffff] font-semibold text-black px-5 font-mono rounded-md"
@@ -77,7 +77,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center mt-[-10rem]">
+        <div className="w-full flex justify-center items-center mt-[-10rem] md:mt-[-9rem] lg:mt-[-8rem] 2xl:mt-[-10rem]">
           <a href="#about-me" className="animate-bounce">
             <i className="fa-solid fa-angle-down text-2xl"></i>
           </a>
