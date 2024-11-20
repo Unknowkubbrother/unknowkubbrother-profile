@@ -1,5 +1,5 @@
 // import React from 'react'
-import Logo_Codekub from "../../assets/logo_codekub.png";
+import Ukb_Logo from "../../assets/ukb_logo.png";
 import Logo_Cis_Kmutnb from "../../assets/logo_cis_kmutnb.png";
 
 function position() {
@@ -10,13 +10,13 @@ function position() {
           <div className="w-[95%] m-auto 2xl:w-[50%] h-full bg-[#262626] rounded-md 2xl:m-5" data-aos="fade-right">
             <div className="w-[90%] 2xl:w-[70%] h-[30%] flex justify-start items-center m-auto mt-5">
               <img
-                src={Logo_Codekub}
+                src={Ukb_Logo}
                 alt=""
-                className="w-[70px] h-[70px] bg-[#3d7fa1] rounded-full"
+                className="w-fit h-[70px]"
               />
               <div className="flex flex-col ml-5">
                 <span className="text-2xl mt-10 2xl:mt-0 2xl:text-3xl text-[#3d7fa1] font-bold">
-                  Codekub
+                  UKB-DEVELOPER
                 </span>
                 <span className="text-xl text-white">
                   Co-Founder, COO • April 2024
@@ -29,21 +29,14 @@ function position() {
                   <span className="text-white">
                     Co-founder of{" "}
                     <a
-                      href="https://shop.unknowkubbrother.net/"
+                      href="https://unknowkubbrother.net/"
                       className="text-sky-500"
                       target="_blank"
                     >
-                      CodeKub
+                      UKB-DEVELOPER
                     </a>
-                    , a{" "}
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61558842330068"
-                      className="text-sky-500"
-                      target="_blank"
-                    >
-                      Facebook
-                    </a>{" "}
-                    page and website for selling programs and accepting all
+                     {" a "}
+                    website for selling programs and accepting all
                     types of programming.
                   </span>
                 </li>

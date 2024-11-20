@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className="w-[95%] 2xl:w-[70%] m-auto flex flex-col 2xl:flex-row justify-between items-center py-5 gap-5">
-        <img src='logo.png' alt="logo" className='w-[90px] h-[80px] 2xl:w-[120px] 2xl:h-[100px]'/>
+        <img src='logo.png' alt="logo" className='w-[80px] h-[80px] 2xl:w-[100px] 2xl:h-[100px]'/>
         <div className="contact-main1 text-center">
           <div className="font-semibold">Contact</div>
           <div className="flex flex-col">

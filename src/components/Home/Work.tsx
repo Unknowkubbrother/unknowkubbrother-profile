@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ukb_shop from "../../assets/ukb-shop.png";
+import numer from "../../assets/numer.png";
 import goit from "../../assets/goit.jpg";
 
 function Work() {
@@ -12,19 +12,19 @@ function Work() {
         </span>
       </div>
       <div className="w-[90%] 2xl:h-[400px] m-auto mt-10 flex flex-col 2xl:flex-row justify-center items-center 2xl:gap-20">
-        <a href="https://shop.unknowkubbrother.net/home" className="w-[95%] 2xl:w-[40%] p-6 rounded-2xl border border-transparent transition duration-1000 hover:scale-[1.015] hover:border-gray-200 hover:shadow-xl cursor-pointer m-auto" target="_blank">
+        <a href="https://numer.unknowkubbrother.net" className="w-[95%] 2xl:w-[40%] p-6 rounded-2xl border border-transparent transition duration-1000 hover:scale-[1.015] hover:border-gray-200 hover:shadow-xl cursor-pointer m-auto" target="_blank">
           <div className="relative mb-8">
             <div className="absolute top-3 left-3 w-full h-full rounded-xl bg-gray-200"></div>
             <img
-              src={ukb_shop}
-              alt="ukb-img"
+              src={numer}
+              alt="numer-img"
               className="relative w-full aspect-[5/3] rounded-xl object-cover"
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-2xl font-semibold text-sky-500">CodeKub-Shop</span>
+            <span className="text-2xl font-semibold text-sky-500">Numerical Methods</span>
             <span className="text-lg text-white">
-            CodeKub's online store sells about the program.
+            Calculation system about Numerical Methods.
             </span>
           </div>
         </a>

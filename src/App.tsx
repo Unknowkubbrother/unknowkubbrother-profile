@@ -1,4 +1,3 @@
-import "./App.css";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Aos from 'aos'
