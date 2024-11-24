@@ -12,7 +12,7 @@ function position() {
               <img
                 src={Ukb_Logo}
                 alt=""
-                className="w-fit h-[70px]"
+                className="w-[90px] h-[70px]"
               />
               <div className="flex flex-col ml-5">
                 <span className="text-2xl mt-10 2xl:mt-0 2xl:text-3xl text-[#3d7fa1] font-bold">
@@ -23,7 +23,7 @@ function position() {
                 </span>
               </div>
             </div>
-            <div className="w-[80%] h-[70%] m-auto text-white p-5">
+            <div className="w-[80%] h-[70%] m-auto text-white p-5 mt-3">
               <ul className="list-disc text-lg">
                 <li className="text-sky-600">
                   <span className="text-white">
